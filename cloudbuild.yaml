@@ -1,0 +1,6 @@
+---
+
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['compute', 'ssh', 'jenkins-development-master', '--zone', 'us-east1-b', '--tunnel-through-iap', '--command', 'ls /var/lib/jenkins']
+
